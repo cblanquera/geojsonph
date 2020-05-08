@@ -23,8 +23,8 @@ DROP TABLE IF EXISTS `country`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `country` (
-  `country_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `country_reference` int(11) unsigned NOT NULL,
+  `country_id` int(3) unsigned NOT NULL AUTO_INCREMENT,
+  `country_reference` int(3) unsigned NOT NULL,
   `country_name` varchar(255) NOT NULL,
   `country_area` multipolygon NOT NULL,
   PRIMARY KEY (`country_id`),
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-09  0:01:53
+-- Dump completed on 2020-05-09  0:51:22
